@@ -9,5 +9,5 @@ First, I was looking around for was to isolate which weekdays cameras were avail
 
 
 Vidualization 1: Violations by Area Type
-![](Violations by Type.jpg)
+![](Chicago-Speed-Violations/Violations by Type.jpg)
 My visualizans began with playing around with the differences between parks and schools. This quickly led me to my first finding that Park violations were declining more quickly than schools. This made it clear I was on a path for significant findings.
