@@ -28,3 +28,5 @@ I summed the total violations, the weekday violations, and the weekend violation
 
 I'm very happy with how my findings have turned out so far. I might be able to improve further on what concrete changes might occur with keeping cameras on during weekends in school zones.
 It is also possible that I could find other ways to represent exactly what is happening and why there is such a significant difference between parks and schools.
+
+###### [Tableau Public Profile](https://public.tableau.com/profile/ttussing#!/)
