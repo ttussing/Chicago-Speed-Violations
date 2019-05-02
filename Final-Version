@@ -1,0 +1,25 @@
+# Chicago-Speed-Violations
+Visualizations based on data created from Chicago's speed violations
+
+### Visualization 1: Violation by Area Type
+My visualizations began by playing around with the differences between parks and schools. It quickly led me to my first finding that park violations were declining at a quicker rate than schools. I also wanted to clearly point out the trendline, so I made the data line opaque for emphasis.
+![Violations by Area Type](Violations-by-Type.jpg)
+
+### Visualization 2: Camera Forecast by Type
+I enjoyed the results I found with how parks make a difference compared to schools so I took it a step further and added a forecast to see if it highlights the effect, and it certainly did. I added a similar format here to emphasize the trendline.
+
+![Cameras Forecast by Type](Cameras-Forecast-by-Type.jpg)
+
+### Visualization 3: Violations in Parks per Weekday
+My final visualization is mostly meant to drive home the point of my graphs. I filtered for parks to show there is a clear difference for parks in weekends vs weekdays. Allowing cameras to be off in school zones on weekends is enabling violators on the worst days.
+
+![Violations in Parks per Weekday](Park-Days-of-Week.jpg)
+
+I summed the total violations, the weekday violations, and the weekend violations and used simple math to come up with the fact that weekends have 28% higher average violations.
+
+## Roadmap
+
+I'm very happy with how my findings have turned out so far. I might be able to improve further on what concrete changes might occur with keeping cameras on during weekends in school zones.
+It is also possible that I could find other ways to represent exactly what is happening and why there is such a significant difference between parks and schools.
+
+###### [Tableau Public Profile](https://public.tableau.com/profile/ttussing#!/)
