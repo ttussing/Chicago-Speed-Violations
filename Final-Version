@@ -1,14 +1,29 @@
 # Chicago-Speed-Violations
 Visualizations based on data created from Chicago's speed violations
 
-### Visualization 1: Violation by Area Type
-My visualizations began by playing around with the differences between parks and schools. It quickly led me to my first finding that park violations were declining at a quicker rate than schools. I also wanted to clearly point out the trendline, so I made the data line opaque for emphasis.
+I read the data explanation that included the implementation of the [speed cameras](https://www.chicago.gov/city/en/depts/cdot/supp_info/children_s_safetyzoneporgramautomaticspeedenforcement.html).
+This included the explanation that when these cameras were added, the citizens allowed it on the condition that the cameras were turned off on days class did not meet including Saturdays, Sundays, and most of the summer.
+
+I decided I could look into the differences between the cameras that were turned off during the weekend, and those that were left on. This would differentiate parks and schools. To do this I had to take these steps with the data in excel:
+<ol>
+<li> I had to isolate which days of the week specific cameras were available. My initial attempt was by downloading a date and day dataset and using VLOOKUP to match days of the week. I realized this was unnecessary when I found I could simply use the function =TEXT([date cell #],"dddd"), creating a new column with the weekdays. 
+<li> I filtered the weekday column by Saturday and Sunday to find the camera IDs that were not associated with schools. I copied the relevant IDs over to a new sheet and removed duplicates. In the column alongside the camera IDs, I put a "1". Back on the unfiltered main dataset, I used VLOOKUP on a new column "Park Dummy" and every camera ID that operated on a weekend at some point was given a "1". I filtered and put a "0" under all others. The reason for all these steps was my difficulty in marking park cameras while they were operating Monday-Friday.
+<li>I replaced "1" with "Park" and "0" with "School" and I had another insightful column which I renamed “Camera Type”.
+</ol>
+
+### Visualization 1 & 2: Violation by Area Type and including Forecast
+
+Eploring the data with the Camera Type column quickly led me to my first finding: park violations were declining at a quicker rate than schools. To show this, I made the color Tableau palette "Traffic Light" for obvious reasons. I also added linear trendlines and to emphasize this, I made the data line opaque.
+My recommendation to the Mayor was simple but supported by the data: park violations were dicreasing at a faster rate, meaning we need to have school cameras operate in a similar way i.e. on weekends and summers.
 ![Violations by Area Type](Violations-by-Type.jpg)
 
-### Visualization 2: Camera Forecast by Type
-I enjoyed the results I found with how parks make a difference compared to schools so I took it a step further and added a forecast to see if it highlights the effect, and it certainly did. I added a similar format here to emphasize the trendline.
-
+I decided to take this parks vs. school cameras observation it a step further and added a forecast to see if it highlights the effect in the trendlines. The slope of the park line seemed to decrease at an even more aggressive rate, whereas the school line showed and even slower decrease than the prior visualzation. I added a similar format here to emphasize the trendlines.
 ![Cameras Forecast by Type](Cameras-Forecast-by-Type.jpg)
+
+After checking the trendline data, I notice the P-value was well over .10, meaning there was no significance. I tried making the trendlines exponential for all 4 line graphs and the P-values decreased to a significant level. Despite this, all my findings held.
+
+The change made by the switch to an exponential trend was that all four trendlines showed to be marginally decreasing. This makes sense because as violations go down, it becomes more and more difficult to keep the rate of decrease.
+
 
 ### Visualization 3: Violations in Parks per Weekday
 My final visualization is mostly meant to drive home the point of my graphs. I filtered for parks to show there is a clear difference for parks in weekends vs weekdays. Allowing cameras to be off in school zones on weekends is enabling violators on the worst days.
@@ -16,6 +31,7 @@ My final visualization is mostly meant to drive home the point of my graphs. I f
 ![Violations in Parks per Weekday](Park-Days-of-Week.jpg)
 
 I summed the total violations, the weekday violations, and the weekend violations and used simple math to come up with the fact that weekends have 28% higher average violations.
+I thought about adding an average line of 14.28%, but I thought this owuld have been too much information and unencessary to make the point
 
 ## Roadmap
 
