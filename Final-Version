@@ -13,16 +13,16 @@ I decided I could look into the differences between the cameras that were turned
 
 ### Visualization 1 & 2: Violation by Area Type and including Forecast
 
-Eploring the data with the Camera Type column quickly led me to my first finding: park violations were declining at a quicker rate than schools. To show this, I made the color Tableau palette "Traffic Light" for obvious reasons. I also added linear trendlines and to emphasize this, I made the data line opaque.
+Eploring the data with the Camera Type column quickly led me to my first finding: park violations were declining at a quicker rate than schools. To show this, I made the color Tableau palette "Traffic Light" for obvious reasons. I also added linear trendlines, and to emphasize this I made the data line opaque.
 My recommendation to the Mayor was simple but supported by the data: park violations were dicreasing at a faster rate, meaning we need to have school cameras operate in a similar way i.e. on weekends and summers.
 ![Violations by Area Type](Violations-by-Type.jpg)
 
-I decided to take this parks vs. school cameras observation it a step further and added a forecast to see if it highlights the effect in the trendlines. The slope of the park line seemed to decrease at an even more aggressive rate, whereas the school line showed and even slower decrease than the prior visualzation. I added a similar format here to emphasize the trendlines.
+I decided to take this parks vs. school cameras observation a step further and added a forecast to see if it highlights the effect in the trendlines. The slope of the park line seemed to decrease at an even more aggressive rate, whereas the school line showed an even slower decrease than the prior visualzation. I added a similar format here to emphasize the trendlines.
 ![Cameras Forecast by Type](Cameras-Forecast-by-Type.jpg)
 
-After checking the trendline data, I notice the P-value was well over .10, meaning there was no significance. I tried making the trendlines exponential for all 4 line graphs and the P-values decreased to a significant level. Despite this, all my findings held.
+After checking the trendline data, I notice some of the P-values were well over .10, meaning there was no significance. I tried making the trendlines exponential for all 4 line graphs and the P-values decreased to a significant level. Despite this, all my findings held.
 
-The change made by the switch to an exponential trend was that all four trendlines showed to be marginally decreasing. This makes sense because as violations go down, it becomes more and more difficult to keep the rate of decrease.
+An important change made by the switch to an exponential trend was that all four showed to be marginally decreasing. This makes sense because as violations go down, it becomes more and more difficult to keep the rate of decrease.
 
 
 ### Visualization 3: Violations in Parks per Weekday
@@ -31,7 +31,9 @@ My final visualization is mostly meant to drive home the point of my graphs. I f
 ![Violations in Parks per Weekday](Park-Days-of-Week.jpg)
 
 I summed the total violations, the weekday violations, and the weekend violations and used simple math to come up with the fact that weekends have 28% higher average violations.
-I thought about adding an average line of 14.28%, but I thought this owuld have been too much information and unencessary to make the point
+I used a quick table calculation to make the bar graph as a % of total, rather than the sum of total.
+I thought about adding an average line of 14.28%, but I thought this would have been too much information and unencessary to make the point.
+I decided to have the % shown at the top of each bar and to remove the Y axis, then I formatted the % to reduce to one decimal place. I also removed the X axis label because the days of the week were self explanatory.
 
 ## Roadmap
 
