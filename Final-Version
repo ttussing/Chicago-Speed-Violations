@@ -35,9 +35,4 @@ I used a quick table calculation to make the bar graph as a % of total, rather t
 I thought about adding an average line of 14.28%, but I thought this would have been too much information and unencessary to make the point.
 I decided to have the % shown at the top of each bar and to remove the Y axis, then I formatted the % to reduce to one decimal place. I also removed the X axis label because the days of the week were self explanatory.
 
-## Roadmap
-
-I'm very happy with how my findings have turned out so far. I might be able to improve further on what concrete changes might occur with keeping cameras on during weekends in school zones.
-It is also possible that I could find other ways to represent exactly what is happening and why there is such a significant difference between parks and schools.
-
 ###### [Tableau Public Profile](https://public.tableau.com/profile/ttussing#!/)
